@@ -1,6 +1,7 @@
 This is the first project which was done in MIT's scratch. I did a little game called "The Penguin Effect" in which you have to help the penguin cross the road. I chose the idea because at the time I was pondering if the penguin or the egg came first.🤔
 
 Specification(Copied from the problem set page):
+
 -> Your project must use at least two sprites, at least one of which must not be a cat.
 
 -> Your project must have at least three scripts total (i.e., not necessarily three per sprite).
