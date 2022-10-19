@@ -9,4 +9,4 @@ Once prompted enter the ammount of voters and the order in which each voter pref
 
 
 
-![meme](https://imgflip.com/i/6xhmve)
+![meme](https://ibb.co/n31YTY0)
