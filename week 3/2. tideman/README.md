@@ -3,6 +3,6 @@ This is it. This was the task I was told to fear before enlisting onto CS50. Fro
 
 Usage:
 
-./tideman [up to 9 candidate names]
+./tideman [up to 9 candidate names separated by a space]
 
 Once prompted enter the ammount of voters and the order in which each voter preffers their candidate.
