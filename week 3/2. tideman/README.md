@@ -6,7 +6,3 @@ Usage:
 ./tideman [up to 9 candidate names]
 
 Once prompted enter the ammount of voters and the order in which each voter preffers their candidate.
-
-
-
-![meme](https://ibb.co/n31YTY0)
