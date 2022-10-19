@@ -1,6 +1,3 @@
-//I AM SLOWLY ADDING THE READMES SO HOLD ON//
-
-
 This is all the code that I wrote when I was doing Harvard's CS50x. 
 
 I really enjoyed this course and would recommend it to anyone who wants to get into computer science or for anyone having a hard time grasping the basic concepts of computing.
