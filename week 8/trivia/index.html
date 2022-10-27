@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function checkAnswer(id){
+                if (id == "RAM"){
+                    document.getElementById(id).style.backgroundColor = '#00ff00';
+                    document.getElementById("Incorrect").style.display = 'none';
+                    document.getElementById("Correct").style.display = 'block';
+                    document.getElementById(id).onclick = null;
+                }
+                else{
+                    document.getElementById(id).style.backgroundColor = '#ff0000';
+                    if (document.getElementById("Correct").style.display == 'none'){
+                        document.getElementById("Incorrect").style.display = 'block';
+                    }
+                    document.getElementById(id).onclick = null;
+                }
+            }
+            function freeAnswer(){
+                let answer = /CPU/i;
+                if (document.getElementById("inputBox").value.toLowerCase() == "cpu"){
+                    document.getElementById("inputBox").style.backgroundColor = '#00ff00';
+                    document.getElementById("inputBox").setAttribute('readonly',true);
+                    document.getElementById("freeIncorrect").style.display = 'none';
+                    document.getElementById("freeCorrect").style.display = 'block';
+                }
+                else{
+                    document.getElementById("inputBox").style.backgroundColor = '#ff0000';
+                    if (document.getElementById("freeCorrect").style.display == 'none'){
+                        document.getElementById("freeIncorrect").style.display = 'block';
+                    }
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is often referred to as a computer's short term memory?</h3>
+                <p style="display:none" id = "Incorrect">Incorrect</p><p style="display:none" id = "Correct">Correct!</p>
+                <div>
+                    <button onclick="checkAnswer(this.id)" id = "RAM">RAM</button>
+                    <button onclick="checkAnswer(this.id)" id = "CPU">CPU</button>
+                    <button onclick="checkAnswer(this.id)" id = "Motherboard">Motherboard</button>
+                    <button onclick="checkAnswer(this.id)" id = "Cat">Cat</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is often referred to as a computer's brain?</h3>
+                <p style="display:none" id = "freeIncorrect">Incorrect</p><p style="display:none" id = "freeCorrect">Correct!</p>
+                <div>
+                <input type="text" id = "inputBox">
+                <button onclick="freeAnswer()">Check Answer</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
